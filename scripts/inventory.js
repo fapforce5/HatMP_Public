@@ -16,7 +16,7 @@ var pic = {};
 //r = room painting
 inv.isFooter = true;
 inv.leftMenu = true;
-inv.roomChange = [10, 12, 201, 451, 452, 503, 552, 553];
+inv.roomChange = [10, 12, 56, 201, 451, 452, 503, 552, 553];
 
 inv.t = [
     { t: "b", n: "Backpack" },

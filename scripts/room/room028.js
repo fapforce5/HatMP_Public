@@ -75,23 +75,22 @@ room28.main = function () {
                     g.st[i].t -= 2;
                 break;
             case "shinkCock":
-                thisTinyPP = g.st[i].t;
-                g.st[i].t = false;
+                if (cl.c.cock < 4) {
+                    thisTinyPP = g.st[i].t;
+                    g.st[i].t = false;
+                }
                 break;
         }
     }
 
-
-
     //check Transformation
-
     
     var btnList = null;
     if (thisTinyPP) {
         console.log("tinyPP")
         btnList = [{
             "type": "btn",
-            "name": cl.c.chest < 4 ? "cock" : "invalid",
+            "name": "cock",
             "left": 1418,
             "top": 457,
             "width": 256,
